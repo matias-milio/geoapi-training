@@ -1,4 +1,10 @@
+using AutoMapper;
+using GeoApi.Application.Contracts;
+using GeoApi.Application.Implementations;
+using GeoApi.Domain.MappingProfiles;
 using GeoApi.Infrastructure.Services.ApiSettings;
+using GeoApi.Infrastructure.Services.GoogleMapsApi.Contracts;
+using GeoApi.Infrastructure.Services.GoogleMapsApi.Implementations;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using RestSharp;
@@ -7,6 +13,17 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.Configure<ExternalAPIsSettings>(builder.Configuration.GetSection("ExternalAPISettings"));
 builder.Services.AddSingleton(new RestClient(new RestClientOptions()));
+builder.Services.AddScoped<IGeoLocalizationService,GeoLocalizationService>();
+builder.Services.AddScoped<IGoogleMapsApiService, GoogleMapsApiService>();
+
+var mappingConfig = new MapperConfiguration(mc =>
+{
+    mc.AddProfile(new MappingProfile());
+});
+
+var mapper = mappingConfig.CreateMapper();
+builder.Services.AddSingleton(mapper);
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
