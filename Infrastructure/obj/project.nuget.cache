@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "36DaQu99bKJkWsfFr7fb0cJpgjvYmPcM/70jatKazAPqtzllYd6o5YhhWd3opwss6qsAc23i5Mg18hDFD4mY9A==",
+  "dgSpecHash": "YDmIa70RbUO/eMvrJWVSNDZNV3ki/3jEL0eNYTbespK+0/zjn9vYjmjFwHUpI9iOYagfNewlTder9ThaULBavg==",
   "success": true,
   "projectFilePath": "C:\\Projects\\geoapi-training\\Infrastructure\\GeoApi.Infrastructure.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Gaudi\\.nuget\\packages\\restsharp\\112.0.0\\restsharp.112.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

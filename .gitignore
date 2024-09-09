@@ -4,3 +4,11 @@
 
 /.vs
 /geoapi/obj
+/geoapi/bin/Debug/net7.0
+/GeoApi.Application/bin/Debug/net7.0
+/GeoApi.Domain/bin/Debug/net7.0
+/GeoApi.Application/obj/Debug/net7.0
+/GeoApi.Domain/obj/Debug/net7.0
+/Infrastructure/bin/Debug/net7.0
+/Infrastructure/obj/Debug/net7.0
+/geoapi/.vs/ProjectEvaluation
