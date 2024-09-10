@@ -16,6 +16,7 @@ builder.Services.AddSingleton(new RestClient(new RestClientOptions()));
 builder.Services.AddScoped<IGeoLocalizationService,GeoLocalizationService>();
 builder.Services.AddScoped<IGoogleMapsApiService, GoogleMapsApiService>();
 
+
 var mappingConfig = new MapperConfiguration(mc =>
 {
     mc.AddProfile(new MappingProfile());
@@ -24,6 +25,7 @@ var mappingConfig = new MapperConfiguration(mc =>
 var mapper = mappingConfig.CreateMapper();
 builder.Services.AddSingleton(mapper);
 
+builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
@@ -36,6 +38,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.MapControllers();
 app.UseHttpsRedirection();
 
 app.Run();

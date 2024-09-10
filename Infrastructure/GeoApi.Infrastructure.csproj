@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Services\GoogleMapsApi\Requests\" />
+    <Folder Include="External Services\GoogleMapsApi\Requests\" />
   </ItemGroup>
 
   <ItemGroup>
