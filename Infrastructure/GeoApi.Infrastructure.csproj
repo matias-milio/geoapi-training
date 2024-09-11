@@ -16,4 +16,8 @@
     <PackageReference Include="RestSharp" Version="112.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\GeoApi.Domain\GeoApi.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

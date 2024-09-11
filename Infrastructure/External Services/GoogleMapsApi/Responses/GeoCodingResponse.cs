@@ -1,4 +1,5 @@
 ﻿
+using GeoApi.Domain.Enums;
 using Newtonsoft.Json;
 using System.Text.Json.Serialization;
 
@@ -31,7 +32,7 @@ namespace GeoApi.Infrastructure.Services.GoogleMapsApi.Responses
         public string Name { get; set; }
         [JsonProperty("types")]
         [JsonPropertyName("types")]
-        public List<string> Types { get; set; }
+        public List<AddressComponentType>? Type { get; set; }
     }
 
     public class Geometry

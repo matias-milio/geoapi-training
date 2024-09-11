@@ -24,8 +24,8 @@ namespace GeoApi.Application.Implementations
 
         public async Task<Geocode> GeocodeAddress(string address)
         {
-            var result = await _googleMapsApiService.GeocodeAddress(address);
-            return _mapper.Map<Geocode>(result); ;
+            var apiResponse = await _googleMapsApiService.GeocodeAddress(address); 
+            return _mapper.Map<Geocode>(apiResponse); 
         }
 
     }
