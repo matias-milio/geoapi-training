@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\GeoApi.Domain\GeoApi.Domain.csproj" />
+    <ProjectReference Include="..\Infrastructure\GeoApi.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>

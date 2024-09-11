@@ -24,7 +24,7 @@ namespace GeoApi.API.Controllers
         public async Task<IActionResult> GetGeocode([FromQuery] string adress)
         {
             //TODO: Request handling
-            return Ok(_geoLocalizationService.GeocodeAddress(adress));
+            return Ok(await _geoLocalizationService.GeocodeAddress(adress));
         }
 
     }

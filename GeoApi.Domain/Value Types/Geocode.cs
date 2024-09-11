@@ -2,24 +2,19 @@
 {
     public class Geocode
     {
-        public List<Result> Results { get; set; }
-    }
-
-    public class Result
-    {
-        public List<string> AddressComponents { get; set; }
-        public Geometry Geometry { get; set; }
-    }
-
-    public class Geometry
-    {
-        public Location Location { get; set; }
+        public List<Location> Results { get; set; }
     }
 
     public class Location
-    {
+    {       
+        public string Address { get; set; }
+        public string StreetNumber { get; set; }
+        public string Country { get; set; }
+        public string Province { get; set; }
+        public string Locality { get; set; }
+        public string PostalCode { get; set; }
         public double Latitude { get; set; }
         public double Longitude { get; set; }
-    }
+    }   
 
 }

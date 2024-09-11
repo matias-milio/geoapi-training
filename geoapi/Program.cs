@@ -1,7 +1,7 @@
 using AutoMapper;
+using GeoApi.API.MappingProfiles;
 using GeoApi.Application.Contracts;
 using GeoApi.Application.Implementations;
-using GeoApi.Domain.MappingProfiles;
 using GeoApi.Infrastructure.Services.ApiSettings;
 using GeoApi.Infrastructure.Services.GoogleMapsApi.Contracts;
 using GeoApi.Infrastructure.Services.GoogleMapsApi.Implementations;
